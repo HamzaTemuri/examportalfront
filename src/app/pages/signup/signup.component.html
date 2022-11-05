@@ -1,0 +1,81 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-6 offset-md-3">
+                <div class="container text-center">
+                    <img src="../../../assets/logo.png" alt="" />
+                    <h1 class="text-center">Registraion </h1>
+
+                    <!-- {{user | json}} -->
+                    <form (ngSubmit)="formSubmit()">
+                        <!-- userName -->
+                        <h6>Username</h6>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <!-- <mat-hint>Username</mat-hint>
+                            <mat-label>Username</mat-label> -->
+                            <input
+                            [(ngModel)]="user.userName"
+                            name="userName" matInput placeholder="Enter here">
+                        </mat-form-field>
+                        <br>
+                        <!-- password -->
+                        <h6>Password</h6>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <!-- <mat-hint>Userpassword</mat-hint>
+                            <mat-label>Userpassword</mat-label> -->
+                            <input
+                            [(ngModel)]="user.password"
+                            name="password" type="password" matInput placeholder="Enter here">
+                        </mat-form-field>
+                        <br>
+                        <!-- first name -->
+                        <h6>First Name</h6>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <!-- <mat-hint>First Name</mat-hint>
+                            <mat-label>FirstName</mat-label> -->
+                            <input
+                            [(ngModel)]="user.firstName"
+                            name="firstName" matInput placeholder="Enter here">
+                        </mat-form-field>
+                        <br>
+                        <!-- last name -->
+                        <h6>Last Name</h6>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <!-- <mat-hint>Last Name</mat-hint>
+                            <mat-label>LastName</mat-label> -->
+                            <input
+                            [(ngModel)]="user.lastName"
+                            name="lastName" matInput placeholder="Enter here">
+                        </mat-form-field>
+                        <br>
+                        <!-- email -->
+                        <h6>Email Address</h6>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <!-- <mat-hint>Email Address</mat-hint>
+                            <mat-label>EmailAdress</mat-label> -->
+                            <input
+                            [(ngModel)]="user.email"
+                            name="email" type="email" matInput placeholder="Enter here">
+                        </mat-form-field>
+                        <br>
+                        <!-- phone number -->
+                        <h6>Phone Number</h6>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <!-- <mat-hint>Phone Number</mat-hint>
+                            <mat-label>Phone</mat-label> -->
+                            <input
+                            [(ngModel)]="user.phone"
+                            name="phone" type="number" matInput placeholder="Enter here">
+                        </mat-form-field>
+                        <br>
+                        <br>
+                        <div class="container text-center">
+                            <button type="submit" mat-raised-button class ="full-width" color="primary">Register</button>
+                            <button style="margin-left: 20px;" class ="full-width" mat-raised-button color="accent">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
